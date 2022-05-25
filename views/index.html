@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/style/style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="cover center all">
+      <div class="main-content bg-main cover center">
+        <div class="cover w-main center f-column gap_30">
+          <div class="main-parent gap_15 center cover f-column">
+            <div class="main-title title">CONSULTA GSE</div>
+            <div class="subtitle">
+              Digite um endereço de ip para que apareçam as informações
+              referentes ao endereço.
+            </div>
+            <div class="query-parent cover">
+              <form
+                action="#"
+                method="post"
+                class="cover center gap_15"
+                id="ip"
+                name="ip"
+              >
+                <input
+                  type="text"
+                  class="input ip-input b-shadow cover"
+                  placeholder="Insira um endereço de ip"
+                  required
+                />
+                <button type="submit" class="ip_submit-btn ip-btn b-shadow">
+                  Enviar
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="response-parent cover center f-column gap_30">
+            <div class="subtitle">
+              Essas são as informações do IP selecionado:
+            </div>
+            <div class="card cover">
+              <div class="country-info cover center f-column gap_30 clr-white">
+                <div class="country-par d-flex between cover gap_30">
+                  <div class="country-name clr-white subtitle">
+                    Country code
+                  </div>
+                  <div class="country-name result-query subtitle" id="countryCode"></div>
+                </div>
+                <div class="country-par d-flex between cover gap_30">
+                  <div class="country-name clr-white subtitle">
+                    Country name
+                  </div>
+                  <div class="country-name result-query subtitle" id="country"></div>
+                </div>
+                <div class="country-par d-flex between cover gap_30">
+                  <div class="country-name clr-white subtitle">Region name</div>
+                  <div class="country-name result-query subtitle" id="regionName"></div>
+                </div>
+                <div class="country-par d-flex between cover gap_30">
+                  <div class="country-name clr-white subtitle">City</div>
+                  <div class="country-name result-query subtitle" id="city"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card between cover gap_30">
+              <div class="card-inside flag-parent cover center">
+                <img
+                  src=""
+                  alt=""
+                  class="cover img-response" id="flagImg"
+                />
+              </div>
+              <div class="card-inside maps-parent cover center"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../assets/app/app.js"></script>
+  </body>
+</html>
