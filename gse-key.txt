@@ -1,9 +1,0 @@
--- GOOGLE GCP --
-
-Credenciais:
-
-AIzaSyCGvkyavlUGQJN8ognVNM0wDRoERpR7yok
-
-url
-
-https://cse.google.com/cse.js?cx=c05e46acb65f8482e"

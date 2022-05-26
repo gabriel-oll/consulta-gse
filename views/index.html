@@ -49,34 +49,44 @@
                   <div class="country-name clr-white subtitle">
                     Country code
                   </div>
-                  <div class="country-name result-query subtitle" id="countryCode"></div>
+                  <div
+                    class="country-name result-query subtitle"
+                    id="countryCode"
+                  ></div>
                 </div>
                 <div class="country-par d-flex between cover gap_30">
                   <div class="country-name clr-white subtitle">
                     Country name
                   </div>
-                  <div class="country-name result-query subtitle" id="country"></div>
+                  <div
+                    class="country-name result-query subtitle"
+                    id="country"
+                  ></div>
                 </div>
                 <div class="country-par d-flex between cover gap_30">
                   <div class="country-name clr-white subtitle">Region name</div>
-                  <div class="country-name result-query subtitle" id="regionName"></div>
+                  <div
+                    class="country-name result-query subtitle"
+                    id="regionName"
+                  ></div>
                 </div>
                 <div class="country-par d-flex between cover gap_30">
                   <div class="country-name clr-white subtitle">City</div>
-                  <div class="country-name result-query subtitle" id="city"></div>
+                  <div
+                    class="country-name result-query subtitle"
+                    id="city"
+                  ></div>
                 </div>
               </div>
             </div>
 
             <div class="card between cover gap_30">
               <div class="card-inside flag-parent cover center">
-                <img
-                  src=""
-                  alt=""
-                  class="cover img-response" id="flagImg"
-                />
+                <img src="" alt="" class="cover img-response" id="flagImg"/>
               </div>
-              <div class="card-inside maps-parent cover center"></div>
+              <div class="card-inside maps-parent cover center">
+                <div id="map" class="cover"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -87,6 +97,10 @@
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=[YOUR GMAPS API KEY]&callback=initMap"
+      defer
     ></script>
     <script src="../assets/app/app.js"></script>
   </body>
